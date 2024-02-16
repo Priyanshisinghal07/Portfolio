@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/design.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="56">
+    <section>
+      <div class="custom_wrapper">
+        <!-- nav-section -->
+        <nav class="navbar navbar-expand-lg fixed-top nav">
+          <div class="container-fluid">
+            <a class="navbar-brand logo-text disabled ms-4" href="#"
+              >Priyanshi</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link nav-text" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text" href="#about">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text me-3" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text me-3" href="#education"
+                    >Education</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text me-3" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text me-3" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <a
+                class="navbar-brand rounded-circle social_border"
+                href="https://www.facebook.com/priyanshi.agarwal.543908"
+                target="_blank"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXNJREFUSEu1lctxgzAQhleDC8FHj0UNsTsRlcSuJJtKQg/g8TGkD2MlqxhYoSfjsS4MIO23z18CXrzEi+1DEqDa9gAABxDizTwBegBoQOsfemJVNTEngwB1vZYwDB8PozEbPRTFEXc7AjvLC1BtewIh3lekrwetP7GqTsszDmCFcfK4tAxqfV5CLMAjLd8Rz3sQ4oz7PY57Fg5RJDWviw3ouq9ozotiu8y1J+IepdyODkwAdbko0JqKGlqIUtaT59QEt5ti3TWf0/o4RjEDUoVl+U06w/bOgK4j71XQfyHqMfcZjdCglEeyxQFUXLsrOG0dYKpDCmAVzBedCjQGSmlsc4Cvg3IAvsinhkgV2cgAecLb08zLuIbBNzdeAAkaReFfa2rA9uYPWj5g6iCrBvQSlYpcABsyB2AgoYHLAaTELiBg/59TAPbfGp9QTZ0LJwxwFDQL4Igaux6NFt3vJWw2GLrJHDWNqOhTv5KX/lPW/w7/AkEl5RmNHMDKAAAAAElFTkSuQmCC"
+              /></a>
+              <a
+                class="navbar-brand rounded-circle social_border"
+                href="https://instagram.com/shararti_piyu?igshid=NGExMmI2YTkyZg=="
+                target="_blank"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvFVTtywjAQ3bXukBZTMshnwDTpc4BMxEmAmdwDcYxUkDNIDGWcFOnTgzcjIwn5gxEFAx1j7b73tG+fEO78wzv3h8cAiP0+hcNBAOIEAPIelYX9tgXGlnI0cv99SUuB2O0EEK3sCVOwvXKNqSVRANFaZtkiPF8DqJgfj1+mqeR8GjsfW7epzhPNZJZ5UnUArQ1zAYwNu+Q2AYVSr4C4BIA/YOyli1wTwLAvuthXV1eWKSAOAPFTjsfyTalnRPwAgB/J+UBoXakI65sAZL5LzmeOrZVvlDWHXRDROxH9siR5WnG+tgCp5Hzo6q8DnFjlQLQ0AwwcNrdqfTNhr1hy7vv2AnhH2ebhDIJvUzfUOICgmSvoGrp3XMf5fgVhgVILQJxfcpXQmtzVGXW3K1AqB8RN2MQP34Ejzoyj4gECFwUOSt2WNoZcW8g4BTfYFBibhgsZA9BalEq6iZCyNFadANE3JEnhrqXmLK1bi9oVFXmTWUwmBTlWW9RLYVfcAlLbdiK/F4ZYX1yfs75fgotrgMBRnVHRyB8TBefiyyCnN+P0FrTejsc8mTFDjT1zdwX/BMpJKPeMah8AAAAASUVORK5CYII="
+              /></a>
+            </div>
+          </div>
+        </nav>
+        <div class="col-sm-12 mt-5 ">
+          <!-- home-section-->
+          <div id="home">
+            <div class="container">
+              <div class="row row-cols-lg-2 row-cols-1">
+                <div class="col mt-4 mb-5">
+                  <h1 class="multicolortext nav-container home-head1">
+                    Hi There,
+                  </h1>
+                  <h1 class="multicolortext home-head">
+                    I'm Priyanshi Singhal
+                  </h1>
+                  <p class="home-para">
+                    I Am A <span class="change-content animated"></span>
+                  </p>
+                  <a
+                    class="btn btn-color btns rounded-pill"
+                    href="#about"
+                    role="button"
+                    ><span class="btn-text">About us</span
+                   >
+                   <i class="fas fa-arrow-circle-down"></i>
+                </a> 
+                </div>
+                <div class="col mt-lg-0 mt-5 ml-5 mb-5">
+                  <img
+                    src="image/photo-1.png"
+                    class="img-fluid img-cont nav-container"
+                    alt="Loading image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="about">
+            <div class="about-cont">
+              <h1 class="about-head">
+                <i
+                  class="fas fa-user"
+                  style="color: #111212; padding-right: 0.5rem"
+                  class="about-icon"
+                ></i
+                >About<span class="about-h1">Me</span>
+              </h1>
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-lg-5 col-12 col-sm-12 about-row">
+                    <img
+                      src="image/photo-2.jpeg"
+                      class="img-fluid about-img"
+                      alt="Loading image"
+                    />
+                  </div>
+                  <div class="col-md-7 col-12 col-sm-12 about-content">
+                    <h3>I'm Priyanshi Singhal</h3>
+                    <span class="tag">Web Developer</span>
+                    <p class="about-content-p">
+                      I am an Web developer based in Bangalore, India. I am an
+                      B.Tech undergraduate from Dayalbagh education Institute. I
+                      am very passionate about improving my coding skills &
+                      developing applications & websites. I build WebApps and
+                      Websites. Working for myself to improve my skills.
+                    </p>
+
+                    <div class="row box-container">
+                      <div class="col-md-5 col-12 col-sm-12">
+                        <p><span>Age:</span> 22</p>
+                        <p><span>Phone:</span> +91 905-818-4522</p>
+                      </div>
+                      <div class="col-md-7 col-12 col-sm-12">
+                        <p><span>Email:</span> Priyanshisinghal234@gmail.com</p>
+                        <p><span>Place:</span> Bangalore, Karnataka</p>
+                      </div>
+                    </div>
+                    <div class="resume-btn">
+                      <a
+                        href="https://drive.google.com/file/d/1aIPivEMpakFZfs2QD5STHvU9h4-Ssmv2/view?usp=drivesdk"
+                        class="btn" target="_blank"
+                        ><span>Resume</span
+                        ><i
+                          class="fas fa-angle-right"
+                          style="color: #fafafa"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="skills">
+           <div class="skills">
+           <h1 class="heading"><i class="fas fa-laptop-code" style="color: #ffffff;"></i>Skills & <span> Abilities</span></h1>
+          <div class="card-row">
+           <div class=" card card-box h-100">
+            <div class="row row-cols-md-3 row-cols-lg-6  row-cols-sm-2 row-cols-1 g-4">
+              <div class="col">
+                <div class="card  card-cont "  style="width: 9rem; height: 8rem;">
+              
+                  <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" class="img-info" alt="...">
+                <span>HTML5</span>
+                </div>
+                </div>
+                <div class="col">
+                  <div class="card  card-cont "  style="width: 9rem; height: 8rem;">
+            
+                    <img src="https://img.icons8.com/color/48/000000/css3.png" class="img-info" alt="...">
+                  
+                  <span>CSS3</span>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="card  card-cont"  style="width: 9rem; height: 8rem;">
+                    
+                      <img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="img-info" alt="...">
+                    <span>Bootstrap5</span>
+                    </div>
+                    </div>
+                    <div class="col">
+                      <div class="card  card-cont"  style="width: 9rem; height: 8rem;">
+                      
+                        <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" class="img-info" alt="...">
+                      <span>JavaScript</span>
+                      </div>
+                      </div>
+                      <div class="col">
+                        <div class="card  card-cont"  style="width: 9rem; height: 8rem;">
+
+                          <img src="https://img.icons8.com/color/48/000000/python--v1.png" class="img-info" alt="...">
+                        <span>Python</span>
+                        </div>
+                        </div>
+                        <div class="col">
+                          <div class="card  card-cont"  style="width: 9rem; height: 8rem;">
+
+                            <img src="https://img.icons8.com/?size=512&id=ewGOClUtmFX4&format=png" class="img-info" alt="...">
+                          <span>Flask</span>
+                          </div>
+                          </div>
+          
+                          <div class="col">
+                            <div class="card  card-cont "  style="width: 9rem; height: 9rem;">
+                          
+                              <img src="https://img.icons8.com/?size=512&id=13406&format=png" class="img-info" alt="...">
+                            <span>SQL</span>
+                            </div>
+                            </div>
+                            <div class="col">
+                              <div class="card  card-cont "  style="width: 9rem; height: 9rem;">
+                        
+                                <img src="https://img.icons8.com/?size=1x&id=q89fSabiI5lg&format=png" class="img-info" alt="...">
+                              
+                              <span>C</span>
+                              </div>
+                              </div>
+                              <div class="col">
+                                <div class="card  card-cont"  style="width: 9rem; height: 9rem;">
+                                
+                                  <img src="https://img.icons8.com/?size=512&id=13679&format=png" class="img-info" alt="...">
+                                <span>java</span>
+                                </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card  card-cont"  style="width: 9rem; height: 9rem;">
+                                  
+                                    <img src="https://img.icons8.com/glyph-neue/48/ffffff/github.png" class="img-info" alt="...">
+                                  <span>GitHub</span>
+                                  </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="card  card-cont"  style="width: 9rem; height: 9rem;">
+            
+                                      <img src="https://img.icons8.com/color/48/000000/git.png" class="img-info" alt="...">
+                                    <span>GitBash</span>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card  card-cont"  style="width: 9rem; height: 9rem;">
+            
+                                        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/external-machine-data-analytics-flaticons-lineal-color-flat-icons.png" class="img-info" alt="...">
+                                      <span>Machine Learning</span>
+                                      </div>
+                                      </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          
+          </div>
+          <div id="education">
+           <div class="edu-container  ">
+            <h1 class="heading">"<i class="fa-solid fa-graduation-cap"></i> My <span> Education</span></h1>
+           <div class="edu-thought">
+            <h1>Education is the most powerful weapon, which you can use to change the change the world.</h1>
+           </div>
+           <div class="edu-card ">
+            <div class="container  ">
+              <div class="card-group ">
+                <div class="row g-0 justify-content-center mt-3">
+                  <div class="col-md-2">
+                    <img src="image/dei.jpeg" class="img-fluid rounded-start h-100 "  alt="...">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body  rounded-end h-100"  style=" background-color:#fff;">
+                      <h3 class="card-title" >Bachelor Of Technology</h3>
+                      <p class="card-text mt-2">Dayalbagh Educational Institute</p>
+                      <h4 >2020-2024</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-0 justify-content-center mt-3 mb-3">
+                  <div class="col-md-2">
+                    <img src="image/green.jpg" class="img-fluid rounded-start h-100 "  alt="...">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body  rounded-end h-100"  style=" background-color:#fff;">
+                      <h3 class="card-title" >High School | Intermediate</h3>
+                      <p class="card-text mt-2">Green Land Convent Senior Secondary School | CBSE</p>
+                      <h4 >2015-2019 | Completed</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+          </div>
+          <div id="project">
+            <div class="project-container">
+              <h1 class="heading">"<i class="fas fa-laptop-code"></i> Projects <span> Made</span></h1>
+              <div class="project-btn">
+           <a href="#" class="btn">
+            View All
+            <i class="fas fa-arrow-right"></i>
+           </a>
+              </div>
+              
+            </div>
+          
+          </div>
+          <div id="contact">
+            <div class="contacts ">
+              <div class="form-area">
+              <h1 class="heading"><i class="fas fa-headset" ></i>Get In <span> Touch</span></h1>
+          <div class="container">
+              <div class="row single-form g-0">
+                  <div class="col-sm-12 col-lg-6 p-4 ps-5">
+                      <div class="img-box">
+                          <img draggable="false" src="https://velvety-gnome-e2eb95.netlify.app/assets/images/contact1.png" alt="loading image">
+                      </div>
+                  </div>
+              <div class="col-sm-12 col-lg-6 p-4 pr-5">
+              <div class="content">
+              <form >
+      <div class="form-group">
+          <div class="field mb-3 mt-3">
+              <input type="text" id="Name" class="form-control" placeholder="Name" required/>
+              <i class="fas fa-user"></i>
+          </div>
+           <div class="field mb-3">
+              <input type="text" id="Email" class="form-control" placeholder="Email" required/>
+              <i class="fas fa-envelope"></i>
+           </div>
+          
+          <div class="field mb-3">
+              <input type="text" id="Contact"  class="form-control" placeholder="Phone" required/>
+              <i class="fas fa-phone-alt"></i>
+          </div>
+          
+      
+        
+           <div class="message mb-3">
+              <textarea name="message" id="message"  class="form-control" placeholder=" Message" required ></textarea>
+              <i class="fas fa-comment-dots"></i>
+           </div>
+          <div class="contact-btn">
+              <input type="button" value= "Submit"class="button" onclick="Send(); reset(); return false "/ >
+      
+             
+          </div>
+      
+      </form>
+      </div>
+      </div>  
+      </div>
+      </div>     
+          </div>
+      </div>
+      </div>
+      <div class="footer">
+       <div class="box-container">
+        <div class="box">
+          <h3>Priyanshi Portfolio</h3>
+          <p>"Thank you for visiting my personal portfolio website. Connect with me over socials." <br> <br>  "Keep Rising
+            🚀. " </p>
+        </div>
+     <div class="box">
+      <h3>Quick Lines</h3>
+      <a href="#home"><i class="fas fa-chevron-circle-right"></i>Home</a>
+      <a href="#about"><i class="fas fa-chevron-circle-right"></i>About</a>
+      <a href="#skills"><i class="fas fa-chevron-circle-right"></i>Skills</a>
+      <a href="#education"><i class="fas fa-chevron-circle-right"></i>Education</a>
+      <a href="#project"><i class="fas fa-chevron-circle-right"></i>Project</a>
+     </div>
+     <div class="box">
+    <h3>Contact Info</h3>
+    <p><i class="fas fa-phone"></i>"+91 905-818-4522"</p>
+    <p><i class="fas fa-envelope"></i>Priyanshisinghal234@gmail.com</p>
+    <p><i class="fas fa-map-marked-alt"></i>Agra, Uttar Pradesh, India-283101</p>
+    <div class="share">
+      <a href="https://www.linkedin.com/in/priyanshi-singhal-498115227" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank">
+  </a>
+  <a href="https://www.facebook.com/priyanshi.agarwal.543908" class="fab fa-facebook" aria-label="facebook" target="_blank"></a>
+  <a href="https://instagram.com/shararti_piyu?igshid=NGExMmI2YTkyZg==" class="fab fa-instagram" aria-label="Telegram" target="_blank"></a>
+    </div>
+     </div>
+   
+       </div>
+   <div class="credit">
+    Designed With <i class="fa fa-heart pulse"></i> By <a href="https://www.linkedin.com/in/priyanshi-singhal-498115227">Priyanshi Singhal</a>
+   </div>
+      </div>
+          </div>
+          <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up active close" id="scroll-top"></a>
+        </div>
+        
+
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/js/animations.min.js"
+      integrity="sha512-Jb1xPasilz4CRWpHF6CQPrVq8ar/oOGD+IYRc02srqssq/X4jdGb4tEq2mklHHiS3SKpFzU8RerqdbGhQGFomQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var type = new Typed(".animated", {
+        strings: ["Web Developer", "Fresher", "Designer"],
+        typeSpeed: 25,
+        backSpeed: 25,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
